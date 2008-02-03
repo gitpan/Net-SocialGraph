@@ -5,7 +5,7 @@ use JSON::Any;
 use LWP::Simple qw();
 use URI;
 
-our $VERSION = '1.0';
+our $VERSION = '1.1';
 
 my $url = 'http://socialgraph.apis.google.com/lookup';
 
@@ -124,5 +124,16 @@ sub get_json {
 
 }
 
+=head1 AUTHOR
+
+Simon Wistow <simon@thegestalt.org>
+
+=head1 COPYRIGHT
+
+Copyright 2008, Simon Wistow
+
+Distributed under the same terms as Perl itself.
+
+=cut
 
 1;

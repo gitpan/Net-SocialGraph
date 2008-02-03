@@ -1,5 +1,5 @@
 Build.PL
-foo
+Changes
 lib/Net/SocialGraph.pm
 MANIFEST			This list of files
 t/01use.t
