@@ -1,0 +1,11 @@
+#!/usr/local/bin/perl -w
+
+use strict;
+use lib qw(lib);
+use Data::Dumper;
+use Net::SocialGraph;
+
+my @urls = @ARGV;
+my $sg   = Net::SocialGraph->new( edo => 1, edi => 1, fme => 1, pretty => 1, sgn => 0);
+print $sg->get_json(@urls)."\n";
+print Dumper([ $sg->get(@urls)]);
